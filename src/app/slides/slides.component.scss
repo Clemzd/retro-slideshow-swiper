@@ -1,23 +1,74 @@
-// @import '~swiper/swiper.min.css';
-// @import '~swiper/modules/navigation/navigation.min.css';
-// @import '~swiper/modules/pagination/pagination.min.css';
+@import '~swiper/swiper.min.css';
+@import '~swiper/modules/navigation/navigation.min.css';
+@import '~swiper/modules/pagination/pagination.min.css';
 
-@import 'swiper/scss';
-@import 'swiper/scss/navigation';
-@import 'swiper/scss/pagination';
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 
-.my-swiper {
-    height: 100%;
 }
 
-.swiper-slide-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #fff;
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  background: #e4dacd;
+  padding: 0;
+}
+
+.blur {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  width: 34%;
+  backdrop-filter: blur(3px);
+  clip-path: circle(70%);
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+}
+
+
+.swiper {
+  width: 100%;
   height: 100%;
-  max-width: 600px;
-  margin: auto;
-  border-radius: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide img {
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1.5;
+  object-fit: cover;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  border-radius: 40px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  transition: transform 0.5s ease-in-out; /* animation de transition */
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+button {
+  position: absolute;
+  top: 0;
+  z-index: 9999999;
 }

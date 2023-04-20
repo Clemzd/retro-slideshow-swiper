@@ -1,16 +1,21 @@
+<div class="blur left"></div>
+<div class="blur right"></div>
 <swiper
-  [slidesPerView]="1"
-  [navigation]="true"
-  [pagination]="{ type: 'fraction' }"
+  [slidesPerView]="3"
+  [speed]="1800"
+  [navigation]="false"
   [keyboard]="{
     enabled: true
   }"
   [virtual]="true"
-  class="my-swiper"
+  [centeredSlides]="true"
+  [spaceBetween]="50"
+  #swiperComponent
 >
-  <ng-template swiperSlide *ngFor="let slide of slides$ | async; index as i">
-    <div class="swiper-slide-container">
-      {{ slide }}
+  <ng-template swiperSlide *ngFor="let img of images; index as i">
+    <div class="oridami-effect">
+      <img [src]="img.src" [alt]="img.alt"/>
     </div>
   </ng-template>
 </swiper>
+<!--<button (click)="debug()">Debug</button>-->
