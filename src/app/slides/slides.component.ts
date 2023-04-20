@@ -55,20 +55,20 @@ export class SlidesComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    const slides = document.getElementsByClassName('oridami-effect');
-    console.log(slides);
-    Array.from(slides).forEach(
-      (slide) => {
-        const paper = new OriDomi(slide, {
-          hPanels: 2,
-          // vPanels: 10,
-          ripple: true,
-          shading: true,
-          shadingIntensity: 1
-        });
-        paper.accordion(5, 'top');
-      }
-    )
+    // const slides = document.getElementsByClassName('oridami-effect');
+    // console.log(slides);
+    // Array.from(slides).forEach(
+    //   (slide) => {
+    //     const paper = new OriDomi(slide, {
+    //       hPanels: 2,
+    //       // vPanels: 10,
+    //       ripple: true,
+    //       shading: true,
+    //       shadingIntensity: 1
+    //     });
+    //     paper.accordion(5, 'top');
+    //   }
+    // )
   }
 
   // @HostListener('document:keyup', ['$event'])
