@@ -15,7 +15,7 @@ body {
   font-size: 14px;
   color: #000;
   margin: 0;
-  background: #e4dacd;
+  background: #041028;
   padding: 0;
 }
 
@@ -39,8 +39,9 @@ body {
 
 
 .swiper {
-  width: 100%;
+  width: 900px;
   height: 100%;
+  border: 0.5px solid white;
 }
 
 .swiper-slide {
@@ -53,22 +54,12 @@ body {
 .swiper-slide img {
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1 / 1.5;
+  aspect-ratio: 1 / 2;
   object-fit: cover;
-  max-width: 90%;
-  max-height: 90%;
-  display: flex;
+  width: 90%;
+  //max-width: 90%;
+  //max-height: 90%;
   border-radius: 40px;
-  transform-style: preserve-3d;
-  perspective: 500px;
-  transition: transform 0.5s ease-in-out; /* animation de transition */
 
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-
-button {
-  position: absolute;
-  top: 0;
-  z-index: 9999999;
+  //box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }

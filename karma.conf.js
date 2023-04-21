@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/slideshow-angular-swiper'),
+      dir: require('path').join(__dirname, './coverage/retro-slideshow-swiper'),
       subdir: '.',
       reporters: [
         { type: 'html' },

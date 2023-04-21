@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "slideshow-angular-swiper": {
+    "retro-slideshow-swiper": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -42,7 +42,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/slideshow-angular-swiper",
+            "outputPath": "dist/retro-slideshow-swiper",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,8 +67,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "5kb",
-                  "maximumError": "15kb"
+                  "maximumWarning": "15kb",
+                  "maximumError": "50kb"
                 }
               ],
               "fileReplacements": [
@@ -94,10 +94,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "slideshow-angular-swiper:build:production"
+              "browserTarget": "retro-slideshow-swiper:build:production"
             },
             "development": {
-              "browserTarget": "slideshow-angular-swiper:build:development"
+              "browserTarget": "retro-slideshow-swiper:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,7 +105,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "slideshow-angular-swiper:build"
+            "browserTarget": "retro-slideshow-swiper:build"
           }
         },
         "test": {
@@ -129,5 +129,5 @@
       }
     }
   },
-  "defaultProject": "slideshow-angular-swiper"
+  "defaultProject": "retro-slideshow-swiper"
 }
