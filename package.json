@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "deploy": "npx ng build --base-href \"https://Clemzd.github.io/retro-slideshow-swiper/\" && npx angular-cli-ghpages --dir=dist/retro-slideshow-swiper && echo \"Open https://Clemzd.github.io/retro-slideshow-swiper\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
